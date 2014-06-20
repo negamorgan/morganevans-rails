@@ -1,9 +1,9 @@
 
 <h1>Morgan Evans</h1>
 
-<p><strong>Welcome to my home!</strong> Er... homepage. Geez, no one even says homepage anymore, but a person needs a home, right? I tend to think so.</p>
+<p class="lead"><strong>Welcome to my home.</strong> Er... homepage. Geez, no one even says homepage anymore, but a person needs a home, right? I tend to think so.</p>
 
-<p><strong>I am a technologist and web development team lead.</strong> Most of my work has been in the area of content management / publishing systems / mass media. In terms of technology, I aim to be a solid generalist in modern scripting languages. I have managed teams of <em>PHP, Python, JavaScript, CSS/Sass, and iOS</em> software engineers. If you asked me to write some code for you, I would probably be most comfortable doing so in <em>Ruby or JavaScript</em>. I try to always use the right tool for the right job. I tend to prefer <em>opinionated technologies</em> that encourage consistency across projects and provide <em>mature tooling</em>. I prefer a <em>test driven development</em> approach when possible and believe a good <em>devops workflow</em> is key to engineer productivity and success, especially at scale.</p>
+<p class="lead"><strong>I am a technologist and web development team lead.</strong> Most of my work has been in the area of content management / publishing systems / mass media. In terms of technology, I aim to be a solid generalist in modern scripting languages. I have managed teams of <em>PHP, Python, JavaScript, CSS/Sass, and iOS</em> software engineers. If you asked me to write some code for you, I would probably be most comfortable doing so in <em>Ruby or JavaScript</em>. I try to always choose the right tool for the right job. I tend to prefer <em>opinionated technologies</em> that encourage consistency across projects and provide <em>mature tooling</em>. I prefer a <em>test driven development</em> approach when possible and believe a good <em>devops workflow</em> is key to engineer productivity and success, especially at scale.</p>
 <!--
 <p>My management philosophy...</p>
 
@@ -14,7 +14,19 @@
 <p>Wanna look at me from afar, silently, judgingly? Check out these links :)</p>
 <ul>
   <li><%= link_to "resume", "http://www.linkedin.com/in/morgane/" %></li>
-  <li><%= link_to "linkedin", "http://www.linkedin.com/in/morgane/" %></li>
-  <li><%= link_to "github", "https://github.com/negamorgan" %></li>
-  <li><%= link_to "twitter", "https://twitter.com/negamorgan" %></li>
+  <li>
+    <%= link_to("http://www.linkedin.com/in/morgane/") do %> 
+      linkedin <i class="fa fa-external-link"></i>
+    <% end %>
+  </li>
+  <li>
+    <%= link_to("https://github.com/negamorgan") do %> 
+      github <i class="fa fa-external-link"></i>
+    <% end %>
+  </li>
+  <li>
+    <%= link_to("https://twitter.com/negamorgan") do %> 
+      twitter <i class="fa fa-external-link"></i>
+    <% end %>
+  </li>
 </ul>
